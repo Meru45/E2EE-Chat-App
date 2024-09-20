@@ -2,27 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --background: #ffffff;
-    --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
     :root {
-        --background: #0a0a0a;
-        --foreground: #ededed;
+        color: #213547;
+        background-color: #ffffff;
     }
-}
-
-body {
-    color: var(--foreground);
-    background: var(--background);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-    .text-balance {
-        text-wrap: balance;
+    a:hover {
+        color: #747bff;
+    }
+    button {
+        background-color: #f9f9f9;
     }
 }
 
